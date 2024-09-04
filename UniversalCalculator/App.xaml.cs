@@ -30,7 +30,7 @@ namespace Calculator
 			if (e.PrelaunchActivated == false)
 			{
 				if (rootFrame.Content == null)
-					rootFrame.Navigate(typeof(MainPage), e.Arguments);
+					rootFrame.Navigate(typeof(NavigationPage), e.Arguments); // Change MainPage to NavigationPage - Ryan Higginson
 
 				Window.Current.Activate();
 			}
