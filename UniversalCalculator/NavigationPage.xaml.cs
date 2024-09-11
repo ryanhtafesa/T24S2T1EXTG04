@@ -39,5 +39,6 @@ namespace Calculator
 		{
 			Frame.Navigate(typeof(MortgageCalculator));
 		}
+		
 	}
 }
