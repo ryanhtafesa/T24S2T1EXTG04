@@ -30,7 +30,7 @@ namespace Calculator
 		private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
 		{
 
-        }
+		}
 		private void btnMathsCalculator_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(MainPage));
@@ -39,6 +39,9 @@ namespace Calculator
 		{
 			Frame.Navigate(typeof(MortgageCalculator));
 		}
-		
+		private void btnCurrencyConverter_Click(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(CurrencyConverter));
+		}
 	}
 }
