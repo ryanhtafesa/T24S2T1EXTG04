@@ -31,18 +31,22 @@ namespace Calculator
 		{
 
 		}
+		// When clicking Maths Caclculator button, navigate to the math calculator page - RH
 		private void btnMathsCalculator_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(MainPage));
 		}
+		// When clicking Mortgage Caclculator button, navigate to the Mortgage calculator page - RH
 		private void btnMortgageCalculator_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(MortgageCalculator));
 		}
+		// When clicking Currency Caclculator button, navigate to the Currency calculator page - RH
 		private void btnCurrencyConverter_Click(object sender, RoutedEventArgs e)
 		{
 			Frame.Navigate(typeof(CurrencyConverter));
 		}
+		// When clicking Exit button, Close then App. - RH
 		private void btnAppExit_Click(object sender, RoutedEventArgs e)
 		{
 			Application.Current.Exit();

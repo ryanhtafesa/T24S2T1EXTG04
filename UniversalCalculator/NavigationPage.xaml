@@ -8,6 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="359" Height="475">
 
+	<!--Adding Comments for Section D - Release Commit Reiquirements - Ryan Higginson-->
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
