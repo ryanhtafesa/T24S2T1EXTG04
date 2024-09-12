@@ -14,7 +14,7 @@
             <Button Name="btnMathsCalculator" Content="Maths Calculator" Margin="10" Width="200" FontWeight="Bold" Click="btnMathsCalculator_Click"/>
 			<Button Name="btnMortgageCalculator" Content="Mortgage Calculator" Margin="10" Width="200" FontWeight="Bold" Click="btnMortgageCalculator_Click"/>
 			<Button Name="btnCurrencyConverter" Content="Currency Converter" Margin="10" Width="200" FontWeight="Bold" Click="btnCurrencyConverter_Click"/> 
-			<Button Name="btnExit" Content="Exit" Margin="10" Width="200" FontWeight="Bold"/>
+			<Button Name="btnExit" Content="Exit" Margin="10" Width="200" FontWeight="Bold" Click="btnAppExit_Click"/>
         </StackPanel>
         <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" Height="114"><Run FontWeight="Bold" Text="Universal Calculator" FontSize="42"/></TextBlock>
 		<Image x:Name="Abacus" HorizontalAlignment="Left" Height="56" Margin="294,10,0,0" VerticalAlignment="Top" Width="55" Source="Assets/abacus.png"/>

@@ -39,7 +39,7 @@ namespace Calculator
 		// Create a method for the Calculation function to generate the outputs to pass the results back to the screen
 		private async void btnCalculate_Click(object sender, RoutedEventArgs e)
 		{
-			
+			// Check if items are the correct data types
 			bool principalCheck = int.TryParse(principalBorrowValue.Text, out int principal);
 			bool yearsBorrowsCheck = int.TryParse(yearsValue.Text, out int years);
 			bool andMonthsCheck = int.TryParse(andMonthsValue.Text, out int months) || string.IsNullOrWhiteSpace(andMonthsValue.Text);
@@ -48,7 +48,7 @@ namespace Calculator
 
 
 			if (principalCheck && yearsBorrowsCheck && andMonthsCheck && yearlyInterestRateCheck)
-			{
+			{	// check if months is blank, and if yes, set it to 0 to prevent any validation issues
 				if (andMonthsCheckblank == true)
 					andMonthsValue.Text = 0.ToString();
 
@@ -78,6 +78,7 @@ namespace Calculator
 					monthlyRepaymentValue.Text = "$ " + monthlyPayment.ToString("F2");
 				}
 			}
+				// display error because incorrect values have been entered
 			else
 			{
 				var errorMsg = new MessageDialog("Invalid Entry: Please enter values");
