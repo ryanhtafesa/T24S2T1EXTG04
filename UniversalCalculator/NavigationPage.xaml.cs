@@ -43,5 +43,9 @@ namespace Calculator
 		{
 			Frame.Navigate(typeof(CurrencyConverter));
 		}
+		private void btnAppExit_Click(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Exit();
+		}
 	}
 }
